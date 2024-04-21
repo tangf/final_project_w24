@@ -63,39 +63,6 @@ img:hover {
     width: 50%;
 }
 
-.back-to-top {
-    position: fixed;
-    opacity: 1;
-    right: 15px;
-    bottom: 15px;
-    z-index: 996;
-    background: #0563bb;
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    transition: all 0.4s;
-    text-align:center;
-    align-content:center;
-    align-items: center;
-}
-.back-to-top i {
-    font-size: 28px;
-    color: #fff;
-    line-height: 5;
-    justify-content: center;
-}
-.back-to-top p {
-  display: none;
-}
-.back-to-top:hover {
-    background: #0678e3;
-    color: #fff;
-}
-.back-to-top .active {
-    visibility: visible;
-    opacity: 1;
-}
-
 
 #header {
     position: fixed;
@@ -136,7 +103,7 @@ img:hover {
     position: relative;
     white-space: nowrap;
   }
-  .nav-menu a, .nav-menu a:focus {
+  .nav-menu a, .nav-menu a:focus , .back-to-top a{
     display: flex;
     align-items: center;
     color: #45505b;
@@ -159,18 +126,18 @@ img:hover {
     color: #45505b;
   }
 
-  .nav-menu a:hover, .nav-menu .active a, .nav-menu .active:focus a, .nav-menu li:hover > a {
+  .nav-menu a:hover, .back-to-top a:hover, .nav-menu .active a, .nav-menu .active:focus a, .nav-menu li:hover > a {
     color: #fff;
     background: #0563bb;
   }
   .nav-menu a:hover span, .nav-menu .active span, .nav-menu .active:focus span, .nav-menu li:hover > a span {
     color: #fff;
   }
-  .nav-menu a:hover, .nav-menu li:hover > a {
+  .nav-menu a:hover, .nav-menu li:hover > a, .back-to-top a:hover{
     width: 100%;
     color: #fff;
   }
-  .nav-menu a:hover span, .nav-menu li:hover > a span {
+  .nav-menu a:hover span, .back-to-top a:hover span, .nav-menu li:hover > a span {
     display: block;
   }
 
@@ -559,6 +526,40 @@ section {
     }
 }  
 
+.back-to-top {
+  position: fixed;
+  opacity: 1;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #0563bb;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  text-align:center;
+  align-content:center;
+  align-items: center;
+  overflow: hidden;
+}
+.back-to-top p {
+  font-size: 28px;
+  color: #fff;
+  line-height: 5;
+  justify-content: center;
+}
+.back-to-top span {
+  color: #fff;
+}
+.back-to-top:hover {
+  background: #0678e3;
+  color: #fff;
+}
+.back-to-top .active {
+  visibility: visible;
+  opacity: 1;
+}
+
 .about img {
   height: 300px;
   width: auto;
@@ -567,9 +568,6 @@ section {
   padding: 5px;
 }
 
-.linkedin  p {
-  display: none;
-}
 
 #footer {
     background: #f7f8f9;
@@ -620,3 +618,8 @@ section {
 #footer .credits {
     font-size: 13px;
 }
+
+.linkedin p {
+  font-family: "Raleway", sans-serif;
+  font-style: bold;
+} 
