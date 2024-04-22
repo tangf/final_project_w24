@@ -210,7 +210,7 @@ img:hover {
     }
   }
 
-  #hero h1 {
+  #hero h2 {
     justify-content: center;
     align-content: center;
     margin: 0;
@@ -252,7 +252,7 @@ img:hover {
     #hero {
       text-align: center;
     }
-    #hero h1 {
+    #hero h2 {
       font-size: 32px;
       line-height: 36px;
     }
@@ -539,7 +539,7 @@ section {
   justify-content: center;
   overflow: hidden;
 }
-.back-to-top h1 {
+.back-to-top h2 {
   font-size: 28px !important;
   color: #fff;
   justify-content: center;
