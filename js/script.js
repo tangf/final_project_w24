@@ -1,7 +1,8 @@
 
 (function() {
     "use strict";
-  
+
+    //helper function for querying
     const select = (el, all = false) => {
       el = el.trim()
       if (all) {
@@ -11,6 +12,7 @@
       }
     }
   
+    //help functioner for event listener
     const on = (type, el, listener, all = false) => {
       let selectEl = select(el, all)
       if (selectEl) {
@@ -22,10 +24,12 @@
       }
     }
   
+    //onscroll listener
     const onscroll = (el, listener) => {
       el.addEventListener('scroll', listener)
     }
-  
+    
+    //scrolling functionality
     let navbarlinks = select('#navbar .scrollto', true)
     const navbarlinksActive = () => {
       let position = window.scrollY + 200
@@ -58,8 +62,8 @@
       })
     }
   
-    //back to top button
 
+    //back to top button
     let backtotop = select('.back-to-top')
     if (backtotop) {
       const toggleBacktotop = () => {
