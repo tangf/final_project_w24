@@ -86,7 +86,7 @@ img:hover {
   
 @media (min-width: 992px) {
     #main {
-      margin-left: 100px;
+      margin-left: 200px;
     }
 }
 
@@ -172,17 +172,12 @@ img:hover {
   }
 
   @media (min-width: 992px) {
+
     .mobile-nav-toggle {
       display: none;
       opacity: 0%;
     }
-    .nav-menu a, .nav-menu a:focus {
-      width: 56px;
-    }
-    .nav-menu a span, .nav-menu a:focus span {
-      display: none;
-      color: #fff;
-    }
+    
     .photo-gallery1 img{
       height: 350px;
       width:auto;

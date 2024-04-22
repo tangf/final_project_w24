@@ -35,10 +35,15 @@
         if (!section) return
         if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
           // Add 'active' class to the closest parent <li> element
-          navbarlink.closest('li').classList.add('active')
+          if (!navbarlink.closest('li').classList.contains('active')){
+            navbarlink.closest('li').classList.add('active');
+          }
+          
         } else {
           // Remove 'active' class from the closest parent <li> element
-          navbarlink.closest('li').classList.remove('active')
+          if (navbarlink.closest('li').classList.contains('active')){
+            navbarlink.closest('li').classList.remove('active');
+          }
         }
       })
     }
