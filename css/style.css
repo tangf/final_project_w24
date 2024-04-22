@@ -477,7 +477,7 @@ section {
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
 }
-.contact h4 {
+.contact h3 {
     padding: 0 0 0 60px;
     font-size: 22px;
     font-weight: 600;
@@ -540,10 +540,11 @@ section {
   overflow: hidden;
 }
 .back-to-top h1 {
-  font-size: 28px;
+  font-size: 28px !important;
   color: #fff;
   justify-content: center;
   text-align: center;
+  opacity: 1;
 }
 
 .back-to-top span {
